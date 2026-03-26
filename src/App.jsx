@@ -15,7 +15,7 @@ import {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/griwd.co.zw">
       <div className="bg-brand-light min-h-screen text-brand-deep flex flex-col">
         <Navbar />
         <main className="flex-grow">
