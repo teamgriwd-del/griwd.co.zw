@@ -35,7 +35,7 @@ export default function IdeaBulb({ hiddenLabels = [], scale = 1 }) {
       </motion.div>
 
       {/* Orbiting Planets */}
-      {visibleOrbits.map((orbit, i) => (
+      {visibleOrbits.map((orbit) => (
         <div
           key={orbit.label}
           className="absolute inset-0 flex items-center justify-center pointer-events-none"

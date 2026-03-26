@@ -25,12 +25,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => setIsOpen(false), [location]);
-
   return (
     <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? "py-4 bg-brand-light/90 backdrop-blur-2xl border-b border-white/5" : "py-8"}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-4 group">
+        <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-4 group">
           <div className="relative">
             <div className="w-12 h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl shadow-brand-blue/20 p-2">
               <img src={logo} alt="GRIWD Logo" className="w-full h-full object-contain" />
@@ -73,20 +71,54 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full glass border-b border-white/10 lg:hidden py-8 px-6 flex flex-col gap-4 text-lg font-medium"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 bg-brand-light z-[150] flex flex-col p-8 pt-32"
           >
-            {links.map((link) => (
+            <button 
+              className="absolute top-8 right-8 text-white p-4 glass rounded-2xl"
+              onClick={() => setIsOpen(false)}
+            >
+              <X size={32} />
+            </button>
+
+            <div className="flex flex-col gap-8">
+              {links.map((link, i) => (
+                <motion.div
+                  key={link.path}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <Link
+                    to={link.path}
+                    className={`text-5xl font-heading tracking-tighter ${
+                      location.pathname === link.path ? "text-brand-blue" : "text-white/40 hover:text-white"
+                    } transition-colors`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name.toUpperCase()}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="mt-auto"
+            >
               <Link
-                key={link.path}
-                to={link.path}
-                className={location.pathname === link.path ? "text-brand-blue" : "text-gray-400"}
+                to="/contact"
+                className="w-full block py-8 rounded-[2rem] bg-brand-blue text-white font-heading text-2xl text-center shadow-2xl shadow-brand-blue/20"
+                onClick={() => setIsOpen(false)}
               >
-                {link.name}
+                HIRE THE TEAM
               </Link>
-            ))}
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

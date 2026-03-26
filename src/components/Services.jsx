@@ -40,7 +40,7 @@ const services = [
 export default function Services() {
   return (
     <section className="py-32 px-6 max-w-7xl mx-auto">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+      <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
         <div className="max-w-2xl">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -49,11 +49,11 @@ export default function Services() {
           >
             Digital Orchestration
           </motion.div>
-          <h2 className="text-5xl md:text-8xl font-heading tracking-tight leading-tight text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-8xl font-heading tracking-tight leading-tight text-white">
             Premium <br /> Multi-Service <br /> <span className="text-white/20">Excellence.</span>
           </h2>
         </div>
-        <p className="text-slate-400 text-xl max-w-sm leading-relaxed mb-4">
+        <p className="text-slate-400 text-lg md:text-xl max-w-sm leading-relaxed mb-4">
           We've refined our offerings into an <span className="text-white font-bold">elite ecosystem</span> of technical and creative services.
         </p>
       </div>
@@ -69,18 +69,18 @@ export default function Services() {
           >
             <Link 
               to={service.path}
-              className="block p-10 rounded-[3.5rem] glass border-white/5 group-hover:border-white/20 transition-all duration-700 min-h-[450px] relative h-full w-full"
+              className="block p-6 sm:p-10 rounded-[2.5rem] sm:rounded-[3.5rem] glass border-white/5 group-hover:border-white/20 transition-all duration-700 min-h-[400px] md:min-h-[450px] relative h-full w-full"
             >
               <div className={`absolute top-0 right-0 w-80 h-80 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 blur-[100px] transition-opacity duration-700`} />
               
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
-                  <div className={`w-24 h-24 rounded-[2.5rem] bg-gradient-to-br ${service.color} flex items-center justify-center mb-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-110 transition-transform duration-500`}>
-                    <service.icon className="text-white" size={48} />
+                  <div className={`w-16 h-16 sm:w-24 sm:h-24 rounded-[1.5rem] sm:rounded-[2.5rem] bg-gradient-to-br ${service.color} flex items-center justify-center mb-8 sm:mb-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-110 transition-transform duration-500`}>
+                    <service.icon className="text-white" size={32} />
                   </div>
 
-                  <h3 className="text-4xl md:text-5xl font-heading mb-6 tracking-tight text-white">{service.title}</h3>
-                  <p className="text-slate-400 text-xl leading-relaxed max-w-[90%]">
+                  <h3 className="text-3xl md:text-5xl font-heading mb-4 sm:mb-6 tracking-tight text-white">{service.title}</h3>
+                  <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-[90%]">
                     {service.desc}
                   </p>
                 </div>

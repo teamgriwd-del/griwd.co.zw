@@ -32,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-7xl md:text-[8.5rem] font-heading mb-12 leading-[0.8] tracking-[-0.05em] text-white"
+          className="text-5xl sm:text-7xl md:text-[8.5rem] font-heading mb-12 leading-[1] md:leading-[0.8] tracking-[-0.05em] text-white"
         >
           CONNECTED <br />
           <span className="text-white/20">INTELLIGENCE</span>
@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-slate-400 max-w-xl text-xl md:text-2xl leading-relaxed mb-16 font-medium"
+          className="text-slate-400 max-w-xl text-lg md:text-2xl leading-relaxed mb-16 font-medium"
         >
           We orchestrate elite IT infrastructure and <span className="text-white font-bold">high-end graphics</span> for the digital era.
         </motion.p>
