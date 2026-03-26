@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-light: #020617; /* Deepest Navy/Slate-950 */
+  --brand-surface: #0F172A; /* Slate-900 */
+  --brand-deep: #F8FAFC; /* Slate-50 for high contrast text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--brand-light);
+  color: var(--brand-deep);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.4);
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* Slate-800 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; /* Slate-700 */
+}
+
+/* Glassmorphism Refined for Dark Mode - Darker for better white text readability */
+.glass {
+  background: rgba(2, 6, 23, 0.75); /* Closer to brand-light for high contrast with white text */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Typography Utility for "CONNECTED INTELLIGENCE" style */
+.font-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Glow Refined for Dark Mode */
+.text-glow-blue { text-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
+.text-glow-purple { text-shadow: 0 0 20px rgba(124, 58, 237, 0.6); }
+.text-glow-orange { text-shadow: 0 0 20px rgba(217, 119, 6, 0.6); }
+.text-glow-red { text-shadow: 0 0 25px rgba(220, 38, 38, 0.7); }
+
+
+/* Animation Utils */
+.stagger-in > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
