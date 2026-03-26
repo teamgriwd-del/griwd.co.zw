@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import CTA from "../components/CTA";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 
 const WhyChooseUs = () => (
   <section className="py-16 md:py-32 px-6 glass border-y border-white/5 relative overflow-hidden">

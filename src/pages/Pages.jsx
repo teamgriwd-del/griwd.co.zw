@@ -8,39 +8,39 @@ import {
 import IdeaBulb from "../components/IdeaBulb";
 
 // Gallery Imports
-import logo from "../assets/logo.png";
-import AddyFinal from "../assets/ADDY-FINAL.jpg";
-import AfricaDay from "../assets/AFRICA DAY FUNDRAISER-FINAL CONCEPT 1-.jpg";
-import Aluminium from "../assets/ALUMINIU.jpg";
-import ArnoldGriwd from "../assets/ARNOLD@GRIWD5.jpg";
-import Barkhausen from "../assets/BARKHAUSEN ENTERPRISES LOGOv1.png";
-import Bhakhauzeni from "../assets/BHAKHAUZENI ELECTRONICS-CCTV.jpg";
-import BlissfulBites from "../assets/BLISSFUL BITES FLYER PRICES.jpg";
-import Certificate1 from "../assets/CERTIFICATE-YOUTH-FUN-DAY-VERSION-1-FINAL.jpg";
-import GriwdPromotional from "../assets/GRIWD-PROMOTIONAL FLYER.jpg";
-import KKAutoparts from "../assets/K&K AUTOPARTS FINA.jpg";
-import LanarWig from "../assets/LANAR WIG FINAL.jpg";
-import MamboDotNet from "../assets/MAMBODOTNET BASE50.jpg";
-import RulsCakes from "../assets/RUL'S-CAKES&SWEETS FINAL.jpg";
-import SaloonBarber from "../assets/SALOON AND BARBERfi.jpg";
-import SamazCarImport from "../assets/SAMAZ CAR IMPORT FINAL FLYER.jpg";
-import SmartFresh from "../assets/SMART-FRESH-PESTS CONTROL AND FUMIGATION.jpg";
-import AlphaRest from "../assets/THE ALPHA REST.jpg";
-import ValsFlyer from "../assets/vals flyer.jpg";
+import logo from "../assets/logo.webp";
+import AddyFinal from "../assets/ADDY-FINAL.webp";
+import AfricaDay from "../assets/AFRICA DAY FUNDRAISER-FINAL CONCEPT 1-.webp";
+import Aluminium from "../assets/ALUMINIU.webp";
+import ArnoldGriwd from "../assets/ARNOLD@GRIWD5.webp";
+import Barkhausen from "../assets/BARKHAUSEN ENTERPRISES LOGOv1.webp";
+import Bhakhauzeni from "../assets/BHAKHAUZENI ELECTRONICS-CCTV.webp";
+import BlissfulBites from "../assets/BLISSFUL BITES FLYER PRICES.webp";
+import Certificate1 from "../assets/CERTIFICATE-YOUTH-FUN-DAY-VERSION-1-FINAL.webp";
+import GriwdPromotional from "../assets/GRIWD-PROMOTIONAL FLYER.webp";
+import KKAutoparts from "../assets/K&K AUTOPARTS FINA.webp";
+import LanarWig from "../assets/LANAR WIG FINAL.webp";
+import MamboDotNet from "../assets/MAMBODOTNET BASE50.webp";
+import RulsCakes from "../assets/RUL'S-CAKES&SWEETS FINAL.webp";
+import SaloonBarber from "../assets/SALOON AND BARBERfi.webp";
+import SamazCarImport from "../assets/SAMAZ CAR IMPORT FINAL FLYER.webp";
+import SmartFresh from "../assets/SMART-FRESH-PESTS CONTROL AND FUMIGATION.webp";
+import AlphaRest from "../assets/THE ALPHA REST.webp";
+import ValsFlyer from "../assets/vals flyer.webp";
 
 // Repair Gallery Imports
-import R1 from "../assets/repair images/14d1bcacbc80ab167f1715ff73e05b21.jpg";
-import R2 from "../assets/repair images/33005e5979c705d611fddcf30ff15333.jpg";
-import R3 from "../assets/repair images/4f8cf92eba36d56de3b06a57e607ff68.jpg";
-import R4 from "../assets/repair images/52261c44a19f55491246378b032bcba1.jpg";
-import R5 from "../assets/repair images/5538a11066e23d568701afa36d27862f.jpg";
-import R6 from "../assets/repair images/793c1c1a19a9c59562260cce592a79f4.jpg";
-import R7 from "../assets/repair images/84e7b4c258c76c4ddd09cfee88477b57.jpg";
-import R8 from "../assets/repair images/97cbbc09be6dfae17b4b1c1fbf52621c.jpg";
-import R9 from "../assets/repair images/9bd61830783799bd177ff580c772b623.jpg";
-import R10 from "../assets/repair images/9c4b012e9d1b7205b07057da1d311ea8.jpg";
-import R11 from "../assets/repair images/b92f47205785136ecdc2bb0c294631c4.jpg";
-import R12 from "../assets/repair images/ce11ff2c5b394ef4ac776747065f5303.jpg";
+import R1 from "../assets/repair images/14d1bcacbc80ab167f1715ff73e05b21.webp";
+import R2 from "../assets/repair images/33005e5979c705d611fddcf30ff15333.webp";
+import R3 from "../assets/repair images/4f8cf92eba36d56de3b06a57e607ff68.webp";
+import R4 from "../assets/repair images/52261c44a19f55491246378b032bcba1.webp";
+import R5 from "../assets/repair images/5538a11066e23d568701afa36d27862f.webp";
+import R6 from "../assets/repair images/793c1c1a19a9c59562260cce592a79f4.webp";
+import R7 from "../assets/repair images/84e7b4c258c76c4ddd09cfee88477b57.webp";
+import R8 from "../assets/repair images/97cbbc09be6dfae17b4b1c1fbf52621c.webp";
+import R9 from "../assets/repair images/9bd61830783799bd177ff580c772b623.webp";
+import R10 from "../assets/repair images/9c4b012e9d1b7205b07057da1d311ea8.webp";
+import R11 from "../assets/repair images/b92f47205785136ecdc2bb0c294631c4.webp";
+import R12 from "../assets/repair images/ce11ff2c5b394ef4ac776747065f5303.webp";
 
 const galleryImages = [
   AddyFinal, AfricaDay, Aluminium, ArnoldGriwd, Barkhausen, Bhakhauzeni,
@@ -52,16 +52,16 @@ const galleryImages = [
 const repairGalleryImages = [R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12];
 
 // Internet Gallery Imports
-import I1 from "../assets/internet images/20251214_083811.jpg";
-import I2 from "../assets/internet images/20251214_083852.jpg";
-import I3 from "../assets/internet images/20251214_095031.jpg";
-import I4 from "../assets/internet images/20251214_114550.jpg";
-import I5 from "../assets/internet images/20251223_182610.jpg";
-import I6 from "../assets/internet images/20251226_184548.jpg";
-import I7 from "../assets/internet images/20260101_153935.jpg";
-import I8 from "../assets/internet images/20260321_113507.jpg";
-import I9 from "../assets/internet images/20260321_113749.jpg";
-import I10 from "../assets/internet images/20260322_132859.jpg";
+import I1 from "../assets/internet images/20251214_083811.webp";
+import I2 from "../assets/internet images/20251214_083852.webp";
+import I3 from "../assets/internet images/20251214_095031.webp";
+import I4 from "../assets/internet images/20251214_114550.webp";
+import I5 from "../assets/internet images/20251223_182610.webp";
+import I6 from "../assets/internet images/20251226_184548.webp";
+import I7 from "../assets/internet images/20260101_153935.webp";
+import I8 from "../assets/internet images/20260321_113507.webp";
+import I9 from "../assets/internet images/20260321_113749.webp";
+import I10 from "../assets/internet images/20260322_132859.webp";
 import V1 from "../assets/internet images/20251208_101420.mp4";
 import V2 from "../assets/internet images/20251214_095006.mp4";
 import V3 from "../assets/internet images/20251214_104012.mp4";
@@ -89,11 +89,11 @@ const internetGalleryItems = [
 ];
 
 // About Gallery Imports
-import A1 from "../assets/about images/20250905_170038.jpg";
-import A2 from "../assets/about images/20251008_141130.jpg";
-import A3 from "../assets/about images/20251027_082140.jpg";
-import A4 from "../assets/about images/20260224_182600[1].jpg";
-import A5 from "../assets/about images/GRIWD REBRANDED.jpg";
+import A1 from "../assets/about images/20250905_170038.webp";
+import A2 from "../assets/about images/20251008_141130.webp";
+import A3 from "../assets/about images/20251027_082140.webp";
+import A4 from "../assets/about images/20260224_182600[1].webp";
+import A5 from "../assets/about images/GRIWD REBRANDED.webp";
 
 const aboutGalleryImages = [A1, A2, A3, A4, A5];
 

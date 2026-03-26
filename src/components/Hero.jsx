@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe } from "lucide-react";
 import IdeaBulb from "./IdeaBulb";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 
 export default function Hero() {
   return (
